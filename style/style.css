@@ -1,0 +1,128 @@
+* {
+   padding: 0;
+   margin: 0;
+}
+
+body {
+   box-sizing: border-box;
+   height: 100vh;
+   background-image: url(../img/bg-color.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   font-family: sans-serif;
+   font-weight: 550;
+}
+
+img {
+   width: 61px;
+   height: 61px;
+   border-radius: 50%;
+   opacity: 0.5;
+   top: 30px;
+   cursor: pointer;
+}
+
+img:hover {
+   opacity: 0.8;
+}
+
+.dropdown {
+   height: 9.91vh;
+   background-color: rgb(103,66,40);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.regions  {
+   position: relative;
+   margin: 40px;
+}
+
+.regions ul {
+   position: absolute;
+   left: 0;
+   margin: 10px;
+   list-style-type: none;
+   width: 140px;
+   background-color: rgb(48,33,30);
+   height: 200px;
+   line-height: 27px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   border-radius: 4%;
+   opacity: 0;
+   pointer-events: none;
+   transform: translateY(20px);
+   transition: all 0.45s;
+}
+
+a {
+   text-decoration: none;
+   color: rgb(251 212 179);
+}
+
+a:hover {
+   color: rgb(40,27,30);
+}
+
+.regions li {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+}
+
+.regions li:hover {
+   background-color: rgb(209,154,107);
+   color: #000;
+}
+
+.dropdown button {
+   background: none;
+   border: none;
+   font-size: 18px;
+   font-weight: 600;
+   cursor: pointer;
+   color: #fff;
+   border: 1px solid;
+   border-radius: 6px;
+   padding: 12px;
+   background-color: rgb(48,33,30);
+}
+
+.dropdown button:hover {
+   background-color: rgb(87, 117, 117);
+   color: rgb(268,296,214);
+}
+
+.regions button:focus + ul {
+   opacity: 1;
+   pointer-events: all;
+   transform: translate(0);
+}
+
+
+.description {
+   margin-top: 25vh;
+   align-items: center;
+   text-align: center;
+}
+
+.description h1 {
+   font-size: 4rem;
+   margin-bottom: 1.2rem;
+   color: #fff44f;
+   font-family: "Dancing Script", cursive;
+}
+
+.description p {
+   color: rgb(195, 193, 193);
+   font-size: 1.2rem;
+   font-weight: 100;
+   line-height: 27px;
+   margin-bottom: 1.5rem;
+}
